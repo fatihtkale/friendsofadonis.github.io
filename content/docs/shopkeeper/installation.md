@@ -129,7 +129,7 @@ For this feature to work properly, your customer's billing details, such as the 
 You are free to extend the models used internally by Shopkeeper by defining your own model and extending the corresponding Shopkeeper model:
 
 ```ts
-// title: app/models/user.ts
+// title: app/models/subscription.ts
 import { Subscription as ShopkeeperSubscription } from '@foadonis/shopkeeper/models'
 
 export default class Subscription extends ShopkeeperSubscription {
