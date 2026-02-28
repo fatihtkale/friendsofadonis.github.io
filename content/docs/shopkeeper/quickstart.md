@@ -34,7 +34,7 @@ router.get('/checkout', async ({ auth, response }) => {
 })
 
 router.on('/checkout/success').render('checkout/success').as('checkout-success')
-router.on('/checkout/cancel').render('checkout/cancel').as('checkout-ssuccessuccess')
+router.on('/checkout/cancel').render('checkout/cancel').as('checkout-cancel')
 ```
 
 As you can see in the example above, we will utilize Shopkeeper's provided `checkout` method to redirect the customer to Stripe Checkout for a given "price identifier". When using Stripe, "prices" refer to [defined prices for specific products](https://stripe.com/docs/products-prices/how-products-and-prices-work).
